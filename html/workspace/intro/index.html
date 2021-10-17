@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>First web</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- tables -->
+    <table style="width: 300px;">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>product-1</td>
+                <td>free</td>
+            </tr>
+            <tr>
+                <td>product-2</td>
+                <td>5,99$</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>Total</td>
+            <td>5,99$</td>
+        </tfoot>
+    </table>
+
+    <!-- lists -->
+    <!-- unordered -->
+    <ul>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ul>
+    <!-- ordered -->
+    <ol>
+        <li value="10">item</li> <!-- starting at 50 -->
+        <li>item</li>
+        <li>item</li>
+        <li>item
+            <ol>
+                <li style="list-style-type: lower-latin;">sub item</li>
+                <li style="list-style-type: lower-latin;">sub item</li>
+                <li style="list-style-type: lower-latin;">sub item
+                    <ol>
+                        <li style="list-style: lower-latin;">item</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+    </ol>
+    <!-- forms -->
+    <form action="/formulario" method="post">
+        <label for="name">Name</label>
+        <input value="deafult" type="text" name="name" id="name" placeholder="name pls">
+        <br>
+        <label for="lastname">Lastname</label>
+        <input value="deafult" type="text" name="lastname" id="lastname" placeholder="lastname pls">
+        <br>
+        <label for="comment">Comment</label>
+        <br>
+        <textarea name="comment" id="comment" cols="50" rows="10">default</textarea>
+        <br>
+        <!-- reset button value to reset the form values -->
+        <button type="reset"><img src="img/coffee.jpg" width="50" height="50"> RESET</button>
+        <button type="submit">BUTTON</button>
+        <button type="button"></button>
+    </form>
+
+    <!-- html basic -->
+    <h1>First heading</h1>
+    <h2>Second heading</h2>
+    <h3>Third heading</h3>
+    <h4>Fourth heading</h4>
+    <h5>Fifth heading</h5>
+    <h6>Sixth heading</h6>
+    <p>Paragraph</p>
+    <hr>
+    <p>Span text <span style="color: blue;">
+            <br> with a <br> blue <br> color</span>
+    </p>
+    <!-- comment -->
+    <a target="_blank" href="https://www.google.com/">google link</a>
+    <br>
+    <img src="img/coffee.jpg" height="100" width="100">
+</body>
+
+</html>
